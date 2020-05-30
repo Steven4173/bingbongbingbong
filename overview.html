@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IT Technology</title>
+	<link rel="stylesheet" type="text/css" href="assignment3stylesheet.css">
+</head>
+
+<body>
+
+
+	<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header">
+		<br>Ugly duckling<br>
+		<br>
+	</div>
+
+	<ul style="text-align: center;" id="navbar">
+		<list>
+			<a class="active" href="#teamprofile">Team Profile</a>
+		</list>
+		<list>
+			<a href="#tools">Tools</a>
+		</list>
+
+
+		<list class="dropdown">
+			<a href="#projectdescription" class="dropbtn">Project Description</a>
+			<div class="dropdown-content">
+				<a href="#list1">List 1</a>
+				<a href="#list2">List 2</a>
+				<a href="#list3">List 3</a>
+				<a href="#list4">List 4</a>
+			</div>
+		</list>
+
+
+		<list>
+			<a href="#skillsandjobs">Skills & Jobs</a>
+		</list>
+		<list>
+			<a href="feedback">Feedback</a>
+		</list>
+		<list>
+			<a href="groupreflection">Group Reflection</a>
+		</list>
+		<list>
+			<a href="#meetings">Meetings</a>
+		</list>
+	</ul>
+
+	<script>
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		var navbar = document.getElementById("navbar");
+
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
+
+	<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;">
+		<h2 style="text-align: center;" id="cloudcomputing">Team Profile</h2>
+
+		<br>
+		<br>
+		<h3 style="text-align: center;">Team Name</h3>
+		<p style="text-align: center;">Our team name is 'Insomnia Squad'.</p>
+		<h3 style="text-align: center;">Personal Information</h3>
+		<h3 style="text-align: center;">Group Processes</h3>
+		<h3 style="text-align: center;">Career Plans</h3>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+
+	<div style="font-size:8pt" class="footer">RMIT COSC2625 Introduction to Information Technology:
+		Assignment 3 2020</div>
+
+</body>
+
+</html>
